@@ -1,11 +1,10 @@
 package Produto;
 
-public class movel {
-public class Movel extends Produto {
+public class movel extends Produto {
 	private String categoria;
 	private String material;
 
-	public Movel(String codigo, String nome, double preco, String categoria, String material) {
+	public movel(String codigo, String nome, double preco, String categoria, String material) {
 		super(codigo, nome, preco);
 		this.categoria = categoria;
 		this.material = material;
@@ -29,5 +28,4 @@ public class Movel extends Produto {
 	public void exibirInfo() {
 		System.out.println("O produto:"  + super.getNome() + this.material);
 	}
-}
 }
